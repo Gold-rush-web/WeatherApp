@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌥️Weather app</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="weatherResult" class="weather-box hidden">
+            <h2 id="cityName">City Name</h2>
+            <p id="temp"></p>
+            <p id="condition"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+        <p id="error" class="error"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/68ddaf6a92.js" crossorigin="anonymous"></script>
+</body>
+</html>
